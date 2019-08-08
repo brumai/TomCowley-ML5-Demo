@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>InspAIre</title>
+    <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <style>
+      #content * {
+        display: block;
+        margin: 10px auto;
+      }
+      body {
+        height: 100vh;
+        margin: 0;
+        display: inline-block;
+        width: 100vw;
+        background: black;
+        color: white;
+        text-align: center;
+      }
+      div * {
+        display: block;
+        margin: 10px;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      button {
+        margin: 0 auto;
+        color: black;
+        font-size: 30px;
+        margin-top: 40px;
+        background-color: white;
+      }
+      h5 {
+        display:inline-block; 
+        margin: 20px 10px;
+        font-size: 20px;
+      }
+      img {
+        border-radius: 5px;
+        border: 6px solid white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="./inspaire.js"></script>
+    <h1>inspAIre</h1>
+    <div id="loading">
+      Loading...
+    </div>
+    <div id="content" style="display: none">
+      <img alt="" id="img" />
+      <h1 id="result"></h1>
+      <button onclick="newImg()">New Image</button>
+      <button onclick="classify()">inspAIre</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Algebra Ninja</title>
+    <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        display: inline-block;
+        width: 100vw;
+        background: black;
+        color: white;
+        text-align: center;
+      }
+      div * {
+        display: block;
+        margin: 10px;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      button {
+        margin: 0 auto;
+        color: black;
+        font-size: 30px;
+        margin-top: 40px;
+        background-color: white;
+      }
+      h5 {
+        display:inline-block; 
+        margin: 20px 10px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="./an.js"></script>
+    <h1>Algebra Ninja</h1>
+    <div id="loading">
+      Loading...
+    </div>
+    <div id="new-game">
+      <button onclick="newGame()">New game</button>
+    </div>
+    <div id="playing" style="display: none">
+      <h5 id="score"></h5>
+      <h5 id="lives"></h5>
+      <h5 id="timer"></h5>
+      <h1 id="question"></h1>
+      <h2 id="question2"></h2>
+      <h4 id="answer"></h4>
+    </div>
+
+    <div id="game-over" style="display: none">
+        <h1>Final Score</h1>
+        <h1 id="final-score"></h1>
+        <button onclick="newGame()">Play again</button>
+      </div>
+  </body>
+</html>
